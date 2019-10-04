@@ -16,6 +16,7 @@ export default function SuccesRoute({userInfo, token}) {
   //All the user Tracks
   const [ userTracks, setUsertraks  ] = useState([])
 
+  const [ check, setCheck ] = useState(false)
 
 
       // EJECUTAR APIS
@@ -58,6 +59,7 @@ export default function SuccesRoute({userInfo, token}) {
                 }
        });       
        setUsertraks(array)
+       setCheck()
      } catch (error) {
        return <Redirect to='/login'/>;
      }
@@ -68,7 +70,8 @@ export default function SuccesRoute({userInfo, token}) {
 
             urlArtists()
             getUserTracks()
-        }, [   ])
+            
+        }, [  check ])
         
     return (
       <Fragment>
