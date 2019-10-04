@@ -16,54 +16,59 @@ export default function SuccesRoute({userInfo, token}) {
   //All the user Tracks
   const [ userTracks, setUsertraks  ] = useState([])
 
-     //Consultar api's
-       const urlArtists = async () =>{
-         try {
-          const res = await axios.get(`https://shielded-crag-67706.herokuapp.com/info/${token}/Artists`);
-          const allInfo = await res.data[0].items;
-          const arr = allInfo.map(res =>{
-            return {name: res.name, images: res.images}
-  
-          }); 
-          setUserArtist(arr)
-         } catch (error) {
-           return <Redirect to='/login'/>;
 
-         }
-        
-      }
-
-      const getUserTracks = async () => {
-        try {
-          const tracks = await axios.get(`https://shielded-crag-67706.herokuapp.com/info/${token}/tracks`);
-          const getInfo = await tracks.data.items;
-          const array = getInfo.map(res =>{
-          const authors = res.artists.map(res => {
-              return res
-            })
-            return {songName: res.name, 
-                    album: res.album.name, 
-                    images: res.album.images, 
-                    albumURL: res.album.external_urls.spotify, 
-                    songURL: res.external_urls.spotify,
-                    authors: authors
-                   }
-          });       
-          setUsertraks(array)
-        } catch (error) {
-          return <Redirect to='/login'/>;
-        }
-
-      }
 
       // EJECUTAR APIS
       useEffect( () => {
           if (userArtists === undefined || userTracks === undefined){
             window.location.reload()
           }
+
+     //Consultar api's
+     const urlArtists = async () =>{
+      try {
+       const res = await axios.get(`https://shielded-crag-67706.herokuapp.com/info/${token}/Artists`);
+       const allInfo = await res.data[0].items;
+       const arr = allInfo.map(res =>{
+         return {name: res.name, images: res.images}
+
+       }); 
+       setUserArtist(arr)
+      } catch (error) {
+        return <Redirect to='/login'/>;
+
+      }
+     
+   }
+
+   const getUserTracks = async () => {
+     try {
+       const tracks = await axios.get(`https://shielded-crag-67706.herokuapp.com/info/${token}/tracks`);
+       const getInfo = await tracks.data.items;
+       const array = getInfo.map(res =>{
+       const authors = res.artists.map(res => {
+           return res
+         })
+         return {songName: res.name, 
+                 album: res.album.name, 
+                 images: res.album.images, 
+                 albumURL: res.album.external_urls.spotify, 
+                 songURL: res.external_urls.spotify,
+                 authors: authors
+                }
+       });       
+       setUsertraks(array)
+     } catch (error) {
+       return <Redirect to='/login'/>;
+     }
+
+   }
+
+
+
             urlArtists()
             getUserTracks()
-        }, [  urlArtists,   urlArtists])
+        }, [  userArtists, userTracks  , token])
         
     return (
       <Fragment>
