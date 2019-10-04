@@ -31,7 +31,8 @@ const [check, setCheck] = useState(false)
           }) 
       } 
     urlTM()
-  }, [ check, events, token ])
+    // eslint-ignore-next-line
+  }, [ check, events ])
 
 
   return (
