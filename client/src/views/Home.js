@@ -35,7 +35,7 @@ export default function SuccesRoute() {
           return <Redirect to='/login'/>;        }
       }
       urls()
-  }, [ userInfo, token ])
+  }, [  ])
 
   return (
     <Fragment>
