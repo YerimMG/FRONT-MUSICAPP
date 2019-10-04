@@ -1,0 +1,281 @@
+body, html {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: black;
+	color: white;
+	height: 100%;
+
+}
+/*--------------------------------
+
+BOTONES DE SPOTY   
+
+---------------------------------*/
+.spotyButton {
+	background-color:#1db954;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	font-weight:bold;
+	padding:15px 47px;
+  text-decoration:none;
+  margin: 10px;
+}
+.spotyButton:hover {
+	background-color: #1ed760;
+}
+.spotyButton:active {
+	top:1px;
+}
+/*--------------------------------
+POSICION DE LOS BOTONES DE SPOTY   
+---------------------------------*/
+.spotyButtons{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	align-items: center;
+	padding: 1em;	
+}
+
+.spotyButton{
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+}
+/*--------------------------------
+
+POSICION DEL HOME  
+
+---------------------------------*/
+
+.parent {
+	display:flex;
+  flex-direction: row;
+  min-height:100%;
+	}
+
+.parent > div {
+		flex:1;
+		display:flex;
+		align-items: center;
+	}
+
+/*--------------------------------
+STYLE HOME
+---------------------------------*/
+.left{
+	background-image: url('./images/giphy.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 1em;
+	flex-direction: column;
+	align-items: center;
+	font-size: 3.1em;	
+
+}
+.right{
+	background-image: url('./images/lightshow-music-concert-wallpaper-preview.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;	
+	padding: 1em;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.author	{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 2em;	
+}
+/*--------------------------------
+
+HOME 
+
+---------------------------------*/
+.home{
+	padding: .1em 2em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.header{
+		font-size: 7em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: .1em;
+	}
+
+	.header > img{
+		width: 3em;
+	}
+	hr {
+		height: .1em;
+		width: 40%;
+		background-color: blue;
+	}
+/*--------------------------------
+
+COMPONENTE PRINCIPAL
+
+---------------------------------*/
+.componentePrincipal{
+	padding: 0em 1em;
+	font-size: 2em;
+	display: flex;
+	flex-direction: column;
+}
+ h2 {
+	font-size: 2em;
+}
+
+/*--------------------------------
+
+ARTISTAS FAVORITOS
+
+---------------------------------*/
+
+.favMusics{
+	display: flex;
+	flex-direction: column;
+}
+.ListCards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.card{
+	font-family: 'Roboto Condensed';
+	flex: 0 1 auto;
+	align-self: auto;
+	background-color: black;
+	hyphens: auto;
+
+}
+
+
+/*--------------------------------
+
+CANCIONES FAVORITAS
+
+---------------------------------*/
+ .cancionesFavs{
+	display: flex;
+	flex-direction: column;
+}
+.songListCards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: auto;
+	align-items: auto;
+	margin: .5em;
+}
+
+
+.button{
+	flex-direction: row;
+	justify-content: space-between;
+	margin: .5em;
+}
+
+/*--------------------------------
+
+CANCIONES FAVORITAS
+
+---------------------------------*/
+.allPresentacions{
+	display: flex;
+	flex-direction: column;
+}
+/*--------------------------------
+
+CONCERTS TM
+
+---------------------------------*/
+.ArtistPresentacions{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: auto;
+	align-items: auto;
+	margin: .5em;
+	border-style: solid ;
+	border-radius: 15px;
+	border-width: .9px;
+	padding: .5em;
+}
+
+/*--------------------------------
+
+INFO EVENT
+
+---------------------------------*/
+.namePrinc{
+	/* background-color: blueviolet; */
+	font-size: 5em;
+	
+}
+.txtInfo{
+	font-size: .5em;
+	text-justify: newspaper;
+	padding: .3em;
+	font-size: 30px;
+}
+
+.eventInfo{
+	display: flex;
+	flex-direction: row;
+	align-content: auto;
+	align-items: auto;
+	padding: .3em;
+	margin: 5px;
+
+}
+
+.cartel{
+
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: auto;
+	align-items: center;
+	margin: .3em;
+	list-style:none
+}
+
+.cartel > img {
+	background-color: darkgreen;
+	height: 10em;;
+	width: 10em;
+}
+
+.date{
+	font-size: 20px;
+}
+
+.describcion{
+	font-size: 15px;
+}
