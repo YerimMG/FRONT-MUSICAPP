@@ -10,28 +10,28 @@ const [events, setEvents] = useState([])
 const [check, setCheck] = useState(false)
 
 
-const urlTM = async () => {
-const timer = [1,2,3,4,5,6,7,9,10,11,12,13,14,15]
-    timer.forEach((response, i) => {
-      setTimeout( async () => {
-        try {
-          let url = `https://shielded-crag-67706.herokuapp.com/ticketMaster/${token}`
-          const res = await axios.get(url)
-          const info = res.data[0].events
-          setEvents(info)
-          setCheck(true)
-        } catch (error) {
-          return <Redirect to='/login'/>;
-        }
-      }, 10000 * i)
-    }) 
-} 
+
 
 
   useEffect( () => {
-   
+    const urlTM = async () => {
+      const timer = [1,2,3,4,5,6,7,9,10,11,12,13,14,15]
+          timer.forEach((response, i) => {
+            setTimeout( async () => {
+              try {
+                let url = `https://shielded-crag-67706.herokuapp.com/ticketMaster/${token}`
+                const res = await axios.get(url)
+                const info = res.data[0].events
+                setEvents(info)
+                setCheck(true)
+              } catch (error) {
+                return <Redirect to='/login'/>;
+              }
+            }, 10000 * i)
+          }) 
+      } 
     urlTM()
-  }, [ check ])
+  }, [ check, events, token ])
 
 
   return (
