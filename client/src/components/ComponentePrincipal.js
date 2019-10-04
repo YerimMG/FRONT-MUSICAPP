@@ -59,8 +59,7 @@ export default function SuccesRoute({userInfo, token}) {
                 }
        });       
        setUsertraks(array)
-       setCheck()
-     } catch (error) {
+X     } catch (error) {
        return <Redirect to='/login'/>;
      }
 
@@ -71,7 +70,7 @@ export default function SuccesRoute({userInfo, token}) {
             urlArtists()
             getUserTracks()
             
-        }, [  check ])
+        }, [  userTracks ])
         
     return (
       <Fragment>
