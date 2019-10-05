@@ -16,7 +16,6 @@ export default function SuccesRoute({userInfo, token}) {
   //All the user Tracks
   const [ userTracks, setUsertraks  ] = useState([])
 
-  const [ check, setCheck ] = useState(false)
 
 
       // EJECUTAR APIS
