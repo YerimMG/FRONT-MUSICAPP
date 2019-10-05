@@ -27,7 +27,7 @@ const [check, setCheck] = useState(false)
               } catch (error) {
                 return <Redirect to='/login'/>;
               }
-            }, 3000 * i)
+            }, 4000 * i)
           }) 
       } 
     urlTM()
