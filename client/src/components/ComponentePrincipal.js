@@ -67,7 +67,7 @@ export default function SuccesRoute({userInfo, token}) {
             urlArtists()
             getUserTracks()
             
-        }, [  ])
+        }, [  userTracks, userArtists ])
         
     return (
       <Fragment>
