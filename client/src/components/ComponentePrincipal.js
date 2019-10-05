@@ -59,7 +59,7 @@ export default function SuccesRoute({userInfo, token}) {
                 }
        });       
        setUsertraks(array)
-X     } catch (error) {
+     } catch (error) {
        return <Redirect to='/login'/>;
      }
 
