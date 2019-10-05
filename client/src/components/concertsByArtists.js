@@ -15,7 +15,7 @@ const [check, setCheck] = useState(false)
 
   useEffect( () => {
     const urlTM = async () => {
-      const timer = [1,2,3,4,5,6,7,9,10,11,12,13,14,15,1,2,3,4,5,6,7,9,10,11,12,13,14,15]
+      const timer = [1,2,3,4,5,6,7,9,10,11,12,13,14,15,1,2,3,4,5,6,7,9,10,11,12,13,14,15, ]
           timer.forEach((response, i) => {
             setTimeout( async () => {
               try {
@@ -32,7 +32,7 @@ const [check, setCheck] = useState(false)
       } 
     urlTM()
     // eslint-ignore-next-line
-  }, [  ])
+  }, [ events ])
 
 
   return (
