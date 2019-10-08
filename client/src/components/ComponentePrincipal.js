@@ -58,9 +58,8 @@ export default function SuccesRoute({userInfo, token}) {
                 }
        });       
        setUsertraks(array)
-       //HOLA
      } catch (error) {
-       return <Redirect to='/login'/>;
+       return window.location.reload()
      }
 
    }
