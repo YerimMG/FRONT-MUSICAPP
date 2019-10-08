@@ -29,13 +29,12 @@ export default function SuccesRoute() {
         try {
           const res = await axios.get(`https://shielded-crag-67706.herokuapp.com/info/${token}`)
           setUserInfo(res.data[0]) 
-       
         }
         catch(err) {
           return <Redirect to='/login'/>;        }
       }
       urls()
-  }, [ userInfo,setUserInfo  ])
+  }, [  ])
 
   return (
     <Fragment>
@@ -44,14 +43,11 @@ export default function SuccesRoute() {
         <div className='header' >
           <h1 > Hola {userInfo.display_name}!!</h1>
           <img src={Logo} alt=""/>
-        </div>
- 
-      
-        
+        </div>       
           <ComponentePrincipal
           userInfo = {userInfo}
           token = {token}
-          />
+          /> 
 
       </div>
     </Fragment>

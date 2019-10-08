@@ -22,27 +22,26 @@ const [check, setCheck] = useState(false)
                 let url = `https://shielded-crag-67706.herokuapp.com/ticketMaster/${token}`
                 const res = await axios.get(url)
                 const info = res.data[0].events
+                
                 setEvents(info)
                 setCheck(true)
               } catch (error) {
                 return <Redirect to='/login'/>;
               }
-            }, 4000 * i)
+            }, 3000 * i)
           }) 
       } 
     urlTM()
-    // eslint-ignore-next-line
-  }, [  ])
+  }, [ ])
 
 
   return (
     <div >
-      
         <ul>
           {check ? events.map((e,i) => {
             return <Events key={i} event={e} />
           }) : <h1>No hay conciertos, pero no te apures, estamos al pendiente  <span  role="img" >😉</span> </h1>}
-        </ul>
+        </ul> 
     </div>
   )
 }
