@@ -20,11 +20,7 @@ const imagenes = cartelInfo.images
   }, [])
 
 
-
-
-
-
-  return (
+  return (  
 <div className="card cartel has-text-light">
   <div className="card-image">
     <figure className="image is-128x128px">

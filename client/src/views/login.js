@@ -21,7 +21,7 @@ useEffect(() => {
   setInterval(() => {
     var item = array[Math.floor(Math.random()*array.length)]; 
     setImage(item)
-  },3000)
+  },4000)
 }, [  ])
   
  
@@ -29,7 +29,7 @@ useEffect(() => {
     <Fragment>
      <div className='columns parent'>
 
-        <div  className='left column' >
+        <div  className='left column ' >
          
           <h1>MUSICAPP</h1>
           <img src={Logo} alt=""/>
@@ -58,8 +58,7 @@ useEffect(() => {
         
         
         
-    </div>
-
+     </div>
     </Fragment>
   )
 }
