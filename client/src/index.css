@@ -56,10 +56,11 @@ POSICION DE LOS BOTONES DE SPOTY
 POSICION DEL HOME  
 
 ---------------------------------*/
-.parent{
+.container{
+	margin: 0;
+background-color: #1db954;
 	display: flex;
 	flex-direction: row;
-	position: fixed; 
   top: 0; 
   left: 0; 
   /* Preserve aspet ratio */
@@ -70,6 +71,8 @@ POSICION DEL HOME
 /*--------------------------------
 STYLE HOME
 ---------------------------------*/
+
+
 .left{
 	background-image: url('./images/giphy.gif');
 	background-repeat: no-repeat;
@@ -96,13 +99,17 @@ STYLE HOME
 	justify-content: space-around;
 
 }
+ .right > h1{
+	font-size: 5em;
 
+ }
 .author	{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-size: 2em;	
 }
+
 /*--------------------------------
 
 HOME 
@@ -269,8 +276,7 @@ CONCERTS TM
 	font-size: 30px;
 	}
 .infoConcert >img{
-
-	width: 70%;
+	width: 60%;
 	padding-right: 1em;
 }
 .infoConcert{

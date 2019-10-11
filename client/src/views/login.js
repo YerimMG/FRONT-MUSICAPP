@@ -30,8 +30,7 @@ useEffect(() => {
      <div className='columns parent'>
 
         <div  className='left column ' >
-         
-          <h1>MUSICAPP</h1>
+
           <img src={Logo} alt=""/>
           <h3>
           Bienvenido a la plataforma perfecta para 
@@ -47,7 +46,8 @@ useEffect(() => {
 
         <div className=' right column' >
 
-            
+                     
+          <h1>MUSICAPP</h1>
             < img src={Logo2} alt=""/>
             <div className="author">
               <h1>{image.frase}</h1>

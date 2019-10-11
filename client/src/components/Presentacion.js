@@ -17,7 +17,7 @@ const { rescinto, state } = cartelInfo.lugar
     
 <h1 className="titulo is-4 has-text-info">{name}</h1> 
         <p className=" is-6 has-text-link ancore">@{Artist}</p>
-        <p className='describcion'>Precios: entre ${min} y ${max}.  {rescinto}, {state}.<br/> {day}, {hour} </p>
+        <p className='describcion'>Precios: entre ${min} y ${max}.  {rescinto}, {state}. {day}, {hour} </p>
         <a className="button is-link " href={url}>Buscar Boletos</a>
         
 
