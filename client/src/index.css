@@ -165,8 +165,8 @@ ARTISTAS FAVORITOS
 
 
 .galleria img {
-	height: 10.9em;
-	width  :10.9em;
+	height: 10em;
+	width  :10em;
 }
 
 .img-box {
@@ -231,7 +231,6 @@ CANCIONES FAVORITAS
 	width: 9em;
 	height: 2em;
 	font-size: 13px;
-	margin: 10px;
 }
 
 /*--------------------------------
