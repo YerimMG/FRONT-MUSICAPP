@@ -24,7 +24,7 @@ export default function SuccesRoute() {
     if (userInfo === undefined ){
       window.location.reload()
     }
-    //Consultar api info del usuario
+    // Consultar api info del usuario
       const urls = async () =>{
         try {
           const res = await axios.get(`https://shielded-crag-67706.herokuapp.com/info/${token}`)
@@ -38,18 +38,18 @@ export default function SuccesRoute() {
 
   return (
     <Fragment>
-      <div className='home'>  
+        <div className='home'>  
 
-        <div className='header' >
-          <h1 > Hola {userInfo.display_name}!!</h1>
-          <img src={Logo} alt=""/>
-        </div>       
-          <ComponentePrincipal
-          userInfo = {userInfo}
-          token = {token}
-          /> 
+          <div className='header' >
+            <h1 > ¡Hola {userInfo.display_name}!</h1>
+            <img src={Logo} alt=""/>
+          </div>       
+            <ComponentePrincipal
+            userInfo = {userInfo}
+            token = {token}
+            /> 
 
-      </div>
+        </div>
     </Fragment>
 
   )

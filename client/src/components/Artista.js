@@ -9,22 +9,18 @@ export default function Artista({artista}) {
 
   // const apiKey = '2afb14099c8f55cf1431ec6977dc7550'
   return (
-  
-  <div className='card'>
-    <div className='card-image'>
-      <img src={imagen}alt={name}/>
-    </div>
-   <div className='card-header'>
-    <h4 className="card-header-title has-text-white is-Roboto Condensed nameArts">{name}</h4>
-   </div>
-  
-      
-  
 
-
-
+<div class="galleria">
+  <div class="img-box ">
+      <img src={imagen} alt={name} />
+        <div class="transparent">
+          <div class="textArt">
+            <p>{name}</p>  
+           
+          </div>
+        </div> 
   </div>
-  
+</div>
 
   )
 } 

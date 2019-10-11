@@ -109,39 +109,38 @@ HOME
 
 ---------------------------------*/
 .home{
-	padding: .1em 2em;
+	/* background-color: red; */
+	padding: .1em 3em;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .header{
+	/* background-color: yellow; */
 		font-size: 7em;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		padding: .1em;
+
 	}
 
 	.header > img{
-		width: 3em;
+		width: 2em;
 	}
-	hr {
-		height: .1em;
-		width: 40%;
-		background-color: blue;
-	}
+
 /*--------------------------------
 
 COMPONENTE PRINCIPAL
 
 ---------------------------------*/
 .componentePrincipal{
-	padding: 0em 1em;
+	/* background-color: grey; */
 	font-size: 2em;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
  h2 {
 	font-size: 2em;
@@ -153,27 +152,61 @@ ARTISTAS FAVORITOS
 
 ---------------------------------*/
 
-.favMusics{
-	display: flex;
-	flex-direction: column;
-}
 .ListCards{
+	/* background-color: green;; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 	justify-content: space-around;
   align-content: center;
-  align-items: center;
-}
-
-.card{
-	font-family: 'Roboto Condensed';
-	flex: 0 1 auto;
-	align-self: auto;
-	background-color: black;
-	hyphens: auto;
+	align-items: center;
 
 }
+
+
+.galleria img {
+	height: 10.9em;
+	width  :10.9em;
+}
+
+.img-box {
+  box-sizing: content-box;
+  overflow: hidden;
+  display: inline-block;
+	position: relative;
+}
+
+.textArt {
+  position: absolute;
+  bottom: 10px;
+  left: 3em;
+  opacity: 0.0;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	font-size: .8em;;
+}
+
+.transparent {
+  height: 10.9em;
+  width  :10.9em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+
+.img-box:hover .transparent {
+	background-color:rgba(0, 0, 0, 0.5);
+	transform: scale(1.3);
+  overflow: hidden;
+}
+
+	.img-box:hover .textArt {
+		transform: translateY(-70px);
+		opacity: 1.0;
+	}
+
+
 
 
 /*--------------------------------
@@ -181,25 +214,24 @@ ARTISTAS FAVORITOS
 CANCIONES FAVORITAS
 
 ---------------------------------*/
- .cancionesFavs{
-	display: flex;
-	flex-direction: column;
-}
 .songListCards{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 	justify-content: space-around;
-	align-content: auto;
-	align-items: auto;
-	margin: .5em;
-}
+  align-content: center;
+	align-items: center;
 
+}
 
 .button{
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	margin: .5em;
+	width: 9em;
+	height: 2em;
+	font-size: 13px;
+	margin: 10px;
 }
 
 /*--------------------------------
@@ -283,3 +315,6 @@ INFO EVENT
 .describcion{
 	font-size: 15px;
 }
+
+
+

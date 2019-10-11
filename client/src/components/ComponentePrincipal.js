@@ -59,7 +59,7 @@ export default function SuccesRoute({userInfo, token}) {
        });       
        setUsertraks(array)
      } catch (error) {
-       return window.location.reload()
+       return 
      }
 
    }
@@ -75,7 +75,7 @@ export default function SuccesRoute({userInfo, token}) {
      <div className='componentePrincipal'>
 
        <div className='favMusics'>
-          <h2>Tus MÚSICOS Favoritos son! </h2>
+          <h2>Tus músicos favoritos son: </h2>
 
             <div className="ListCards">
               {userArtists.slice(0,12).map((resp, i) => 
@@ -84,7 +84,6 @@ export default function SuccesRoute({userInfo, token}) {
             </div>
       </div>
       
-      <div className='cancionesFavs'>
         <h2>Tus Canciones Favoritas! </h2>
  
             <div className="songListCards">
@@ -99,7 +98,6 @@ export default function SuccesRoute({userInfo, token}) {
             <ConcertsByArtists 
             token= {token}/>
       </div>   
-    </div>
   
       </Fragment>
     )
