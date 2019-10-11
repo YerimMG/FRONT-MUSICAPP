@@ -93,11 +93,14 @@ export default function SuccesRoute({userInfo, token}) {
               )}
             </div>
       </div>
-      <div className="allPresentacions" >    
-            <h2>Tal vez Estas Presentaciones te Interesan!</h2>
+      <div className="hola">
+        <h2>Tal vez Estas Presentaciones te Interesan!</h2>
+      </div>
+           <div className="ArtistPresentacions">
             <ConcertsByArtists 
             token= {token}/>
-      </div>   
+           </div>
+
   
       </Fragment>
     )

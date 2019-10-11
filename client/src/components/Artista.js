@@ -10,11 +10,11 @@ export default function Artista({artista}) {
   // const apiKey = '2afb14099c8f55cf1431ec6977dc7550'
   return (
 
-<div class="galleria">
-  <div class="img-box ">
+<div className="galleria">
+  <div className="img-box ">
       <img src={imagen} alt={name} />
-        <div class="transparent">
-          <div class="textArt">
+        <div className="transparent">
+          <div className="textArt">
             <p>{name}</p>  
            
           </div>

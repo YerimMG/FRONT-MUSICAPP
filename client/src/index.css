@@ -118,7 +118,7 @@ HOME
 }
 .header{
 	/* background-color: yellow; */
-		font-size: 7em;
+		font-size: 6em;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -143,7 +143,7 @@ COMPONENTE PRINCIPAL
 	align-items: flex-start;
 }
  h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 /*--------------------------------
@@ -233,87 +233,75 @@ CANCIONES FAVORITAS
 	font-size: 13px;
 }
 
-/*--------------------------------
 
-CANCIONES FAVORITAS
-
----------------------------------*/
-.allPresentacions{
-	display: flex;
-	flex-direction: column;
-}
 /*--------------------------------
 
 CONCERTS TM
 
 ---------------------------------*/
-.ArtistPresentacions{
+
+.maiContainer{
+	/* background-color: gray; */
 	color: white;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-content: auto;
-	align-items: auto;
-	margin: .5em;
+	padding: 1em;
+	margin-bottom: 2em;
+
 	border-style: solid ;
 	border-radius: 15px;
 	border-width: .9px;
-	padding: .5em;
-}
-
-/*--------------------------------
-
-INFO EVENT
-
----------------------------------*/
-.namePrinc{
-	/* background-color: blueviolet; */
-	font-size: 5em;
-	
-}
-.txtInfo{
-	font-size: .5em;
-	text-justify: newspaper;
-	padding: .3em;
-	font-size: 30px;
-}
-
-.eventInfo{
-	display: flex;
-	flex-direction: row;
-	align-content: auto;
-	align-items: auto;
-	padding: .3em;
-	margin: 5px;
-
-}
-
-.cartel{
-
 
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	align-items: flex-start;
+}
+.namePrinc{
+	/* background-color: darkgreen; */
+	font-size: 3em;
+}
+.txtInfo{
+	/* background-color: darkgoldenrod;; */
+	font-size: 1em;
+
+	text-justify: newspaper;
+	padding: .3em;
+	font-size: 30px;
+	}
+.infoConcert >img{
+
+	width: 70%;
+	padding-right: 1em;
+}
+.infoConcert{
+	padding-top: 1em;
+	display: flex;
+	flex-direction: row;
 	justify-content: flex-start;
-	align-content: auto;
-	align-items: center;
-	margin: .3em;
-	list-style:none
+	align-content: flex-start;
+	align-items: flex-start;
+	}
+
+.prensentacion{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
 }
 
-.cartel > img {
-	background-color: darkgreen;
-	height: 10em;;
-	width: 10em;
+.cartel{
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	align-items: flex-start;
+
 }
 
-.date{
-	font-size: 20px;
+.titulo{
+	font-size: 1.5em;
 }
-
-.describcion{
-	font-size: 15px;
+.hola{
+font-size: 2em;
 }
-
-
-

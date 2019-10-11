@@ -8,17 +8,17 @@ export default function Cancion({cancionInfo}) {
 
   return (
 
-  <div class="galleria">
-  <div class="img-box ">
+  <div className="galleria">
+  <div className="img-box ">
       <img src={images[1].url} alt={songName} />
-        <div class="transparent">
-          <div class="textArt">
+        <div className="transparent">
+          <div className="textArt">
             
             <a className="button is-success" href={albumURL}> Descubrir el Álbum</a>
             <a className="button is-success" href={songURL}> Escuchar la Canción</a>
           </div>
         </div> 
-        <p>{songName}</p>  
+        <p className="is-size-6	">{songName}</p>  
   </div>
 </div>
 
