@@ -178,7 +178,7 @@ ARTISTAS FAVORITOS
 
 .textArt {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 3em;
   opacity: 0.0;
 	transition: transform 0.3s ease, opacity 0.3s ease;
