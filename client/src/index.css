@@ -274,13 +274,6 @@ CONCERTS TM
 	padding-right: 1em;
 }
 .infoConcert{
-	padding-top: 1em;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-content: flex-start;
-	align-items: flex-start;
-	}
 
 .prensentacion{
 	display: flex;
