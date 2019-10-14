@@ -10,7 +10,6 @@ export default function Events({event}) {
 
 
 useEffect(() => {
-// console.log( Object.values(events) )
     events.forEach(response=> {
       const img = response.images
       img.forEach( e => {
