@@ -22,3 +22,4 @@ const { rescinto, state } = cartelInfo.lugar
 </div>
   )
 }
+//HOLA!!
